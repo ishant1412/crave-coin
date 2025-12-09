@@ -1,0 +1,44 @@
+
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes levitate {
+    0%   { transform: translateY(0) rotateZ(-1deg); box-shadow: 0 18px 30px -6px rgba(0,0,0,0.55); }
+    50%  { transform: translateY(-14px) rotateZ(1deg); box-shadow: 0 4px 16px -2px rgba(0,0,0,0.28); }
+    100% { transform: translateY(0) rotateZ(-1deg); box-shadow: 0 18px 30px -6px rgba(0,0,0,0.55); }
+  }
+  .anim-levitate { animation: levitate 3s ease-in-out infinite; }
+}
+.scroll-wrapper {
+  width: 100%;
+  overflow: hidden;
+
+}
+::selection {
+  background: #fccda9;  /* purple-ish */
+  color: white;        /* text color while highlighted */
+}
+.scroll-content {
+  display: flex;
+  gap: 40px;
+  min-width: 600px; /* should be 2× approx the wrapper width */
+  animation: scroll 8s linear infinite;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;      /* IE & older Edge */
+  scrollbar-width: none;         /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;                 /* Chrome, Safari, Edge */
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-35%);
+  }
+}
