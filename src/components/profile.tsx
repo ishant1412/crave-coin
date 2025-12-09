@@ -2,7 +2,6 @@ import { memo } from 'react';
 import ClaimedCard from './claimedCard';
 import logo from "../assets/logo.png"
 import { claimeddata } from '../assets/data';
-import claimedCard from './claimedCard';
 import { Info, Settings } from 'lucide-react';
 const Profile = () => {
   return (

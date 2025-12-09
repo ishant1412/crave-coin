@@ -6,7 +6,7 @@ const Transactioncard = ({
     day,
     time,
     reward,
-    type,
+    
     payment
 }:transactionCardprop) => {
   return (

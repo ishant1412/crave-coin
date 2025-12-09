@@ -8,7 +8,7 @@ import Scan from './scan';
 import Rewards from './rewards';
 import Profile from './profile';
 import Layout from './layout';
-import ScanTest from './scan-test';
+
 const Router = () => {
   return (
     <BrowserRouter>
@@ -20,7 +20,7 @@ const Router = () => {
          <Route path='/scan' element={<Scan></Scan>} />
          <Route path='/rewards' element={<Rewards></Rewards>} />
          <Route path='/profile' element={<Profile></Profile>} />
-         <Route path='/scan-test'element={<ScanTest></ScanTest>}/>
+  
          </Route>
        
         </Routes></BrowserRouter>
