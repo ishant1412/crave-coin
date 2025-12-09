@@ -1,10 +1,10 @@
 import { memo, useRef, useState } from 'react';
 import logo from "../assets/logo.png";
-import Button from './button';
+
 import  Authform from './authform';
-import { Type } from 'lucide-react';
+
 const Navbar = () => {
-    const [clicked, setclick] = useState(false);
+   
     const [showauth,setshowauth]= useState(false);
     const type = useRef<string>(null)
     

@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Momo+Trust+Display&display=swap');
 @import 'tailwindcss';
 
+@theme{
+  --color-tangy:oklch(70.5% 0.213 47.604);
+}
 .momo-trust-display-regular {
   font-family: "Momo Trust Display", sans-serif;
   font-weight: 400;
@@ -24,9 +27,7 @@
   font-style: normal;
 }
 
-@theme{
-  --color-tangy:oklch(70.5% 0.213 47.604);
-}
+
 @layer utilities {
   @keyframes levitate {
     0%   { transform: translateY(0) rotateZ(-1deg); box-shadow: 0 18px 30px -6px rgba(0,0,0,0.55); }

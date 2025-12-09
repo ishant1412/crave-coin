@@ -1,6 +1,6 @@
 import logo from "../assets/logowhite.png"
-import { memo, useState } from 'react';
-import { Apple, ArrowRight, Banana, CandyCane, CupSoda, Hamburger, Soup } from "lucide-react";
+import { memo} from 'react';
+import {  ArrowRight } from "lucide-react";
 import Button from "./button";
 const Hero = () => {
   

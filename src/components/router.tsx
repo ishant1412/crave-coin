@@ -1,8 +1,7 @@
-import React, { memo } from 'react';
+import  { memo } from 'react';
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import Dashboard from './dashboard';
-import Navbar from './navbar';
-import Hero from './hero';
+
 
 import Landing from './landing';
 import Scan from './scan';

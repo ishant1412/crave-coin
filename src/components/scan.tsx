@@ -1,16 +1,12 @@
 import { X, ScanLine } from "lucide-react";
-import { memo, useState, useEffect, useRef } from "react";
+import { memo } from "react";
 import { useNavigate } from "react-router-dom";
-import { parseUpi } from "../assets/essentials";
+
 import Webcam from "react-webcam";
-const videoConstraints = {
-  width: 1280,
-  height: 720,
-  facingMode: "user"
-};
+
 
 const Scan = () => {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
+  
 
 
 

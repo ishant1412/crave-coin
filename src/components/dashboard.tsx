@@ -1,9 +1,9 @@
 import { memo } from 'react';
 import logo from "../assets/logowhite.png"
-import { ChartNoAxesCombined, Scan, Sparkles } from 'lucide-react';
+import { Scan, Sparkles } from 'lucide-react';
 import Transactioncard from './transactioncard';
-import {transactionData , bottombarlinks} from '../assets/data';
-import { Link ,useNavigate } from 'react-router-dom';
+import {transactionData } from '../assets/data';
+import { useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
   const navigate= useNavigate();

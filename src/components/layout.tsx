@@ -1,5 +1,5 @@
-import { memo, type ReactElement } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { memo } from 'react';
+import {  NavLink } from 'react-router-dom';
 import { bottombarlinks } from '../assets/data';
 import { Outlet } from 'react-router-dom';
 const Layout = () => {

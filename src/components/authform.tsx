@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useRef } from 'react';
+import  { memo, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 type typeprop="signup"|"login"
 const Authform = (
